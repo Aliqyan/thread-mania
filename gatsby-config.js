@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-  pathPrefix: "/site",
+  pathPrefix: "/thread-mania",
   plugins: [
     `gatsby-plugin-jss`, `gatsby-plugin-sharp`, `gatsby-transformer-sharp`,
     {
