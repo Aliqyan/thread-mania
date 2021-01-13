@@ -50,10 +50,6 @@ const AboutMe = ({ onCollectionJump, onFeedbackJump }) => {
             </p>
           </div>
           <div className={classes.media}>
-            {/* <img
-              src="https://i.pinimg.com/originals/40/d0/99/40d099b686057d9613f7c2bbee5b9e2b.png"
-              style={{ width: "100%", boxShadow: "10px 15px" }}
-            /> */}
             <Img
               fixed={data.file.childImageSharp.fixed}
               style={{ display: "flex", boxShadow: "10px 15px #00293d" }}
@@ -132,9 +128,7 @@ const useStyles = createUseStyles({
   },
   content: {
     margin: "20px auto",
-
     width: "80%",
-    // maxWidth: "1200px",
     display: "flex",
     flexFlow: "column",
   },
@@ -159,7 +153,7 @@ const useStyles = createUseStyles({
     },
   },
   link2: {
-    color:'black',
+    color: "black",
     hover: {
       color: "#0056b3",
       textDecoration: "underline",

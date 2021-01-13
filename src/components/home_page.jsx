@@ -1,7 +1,6 @@
 import React from "react"
 import { createUseStyles } from "react-jss"
 import Header from "../assets/header.svg"
-import SubTitle from "./shared/subtitle"
 import Particles from "react-particles-js"
 
 const HomePage = () => {
@@ -67,7 +66,7 @@ const HomePage = () => {
         <div className={classes.headerImg}>
           <Header style={{ width: "100%" }} />
         </div>
-        <div style={{ display: "flex", flexDirection:"column" }}>
+        <div style={{ display: "flex", flexDirection: "column" }}>
           <div className={classes.title}>Living life one stitch at a time</div>
           <div className={classes.title2}>Mubarakah (Muba) Tapia</div>
         </div>
@@ -81,7 +80,6 @@ const useStyles = createUseStyles({
     display: "flex",
     maxWidth: "100%",
     height: "100vh",
-    // background: "rgb(0,41,61)",
     background:
       "linear-gradient(146deg, rgba(103,11,11,1) 0%, rgba(11,83,119,1) 85%)",
   },
@@ -103,25 +101,21 @@ const useStyles = createUseStyles({
     margin: 0,
     maxWidth: "90vw",
     color: "white",
-    // textShadow: "4px 4px #000000",
     fontSize: "60px",
     fontFamily: "Nothing You Could Do",
   },
   title2: {
     color: "white",
-    // textShadow: "4px 4px #000000",
     fontSize: "30px",
     fontFamily: "Nothing You Could Do",
   },
   "@media screen and (max-width: 500px)": {
     title: {
       fontSize: "40px",
-      // margin: "auto",
     },
-    title2:{
-            fontSize: "20px",
-
-    }
+    title2: {
+      fontSize: "20px",
+    },
   },
 })
 

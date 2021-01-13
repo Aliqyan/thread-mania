@@ -1,11 +1,12 @@
-import React, {forwardRef} from "react"
+import React, { forwardRef } from "react"
 import { createUseStyles } from "react-jss"
-import {Carousel} from "react-bootstrap"
+import { Carousel } from "react-bootstrap"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import SubTitle from "./shared/subtitle"
 
+// TODO: Find a better way to do this. Potentially store as a seperate json data file?
 const collectionMetaData = {
   image3: {
     title: "Roses are Red",
@@ -167,16 +168,10 @@ const Collection = forwardRef(({ onCollectionJump }, ref) => {
               <div
                 style={{
                   display: "flex",
-                  // alignItems: "center",
                   justifyContent: "center",
-
-                  //   height: "300px",
-
                   width: `min(80vw,${
                     image.node.childImageSharp.fluid.aspectRatio * 60
                   }vh)`,
-                  //   margin: 'auto'
-                  //   height: "1000px",
                 }}
               >
                 <Img
@@ -186,7 +181,6 @@ const Collection = forwardRef(({ onCollectionJump }, ref) => {
                   style={{
                     display: "flex",
                     width: "100%",
-                    //   margin: "0px auto"
                   }}
                 />
               </div>
@@ -221,17 +215,13 @@ const useStyles = createUseStyles({
     marginBottom: "20px",
     display: "flex",
     flexFlow: "column",
-    // width: "80%",
-    // maxWidth: "1200px",
   },
   caption: {
-    left: '0%',
-    right: '0%',
-    padding: '5px',
-    position: 'relative',
-    bottom: '0px',
-
-
+    left: "0%",
+    right: "0%",
+    padding: "5px",
+    position: "relative",
+    bottom: "0px",
   },
 })
 

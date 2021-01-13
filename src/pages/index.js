@@ -1,4 +1,4 @@
-import React, {useRef} from "react"
+import React, { useRef } from "react"
 import HomePage from "../components/home_page"
 import AboutMe from "../components/about_me"
 
@@ -20,9 +20,9 @@ export default function Home() {
   return (
     <>
       <HomePage />
-      <AboutMe onCollectionJump={handleCollectionClick} onFeedbackJump={handleFeedbackClick}/>
-      <Collection ref={collectionRef} onCollectionJump={handleCollectionClick}/>
-      <Feedback ref={feedbackRef} onFeedbackJump={handleFeedbackClick}/>
+      <AboutMe onCollectionJump={handleCollectionClick} onFeedbackJump={handleFeedbackClick} />
+      <Collection ref={collectionRef} onCollectionJump={handleCollectionClick} />
+      <Feedback ref={feedbackRef} onFeedbackJump={handleFeedbackClick} />
       <Footer />
     </>
   )
