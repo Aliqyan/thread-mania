@@ -30,7 +30,7 @@ const AboutMe = ({ onCollectionJump, onFeedbackJump }) => {
         <SubTitle text="About Me" />
         <div className={classes.content2}>
           <div className={classes.bio}>
-            <p>Hello</p>
+            <p className={classes.specialText}>Hello,</p>
             <p>
               Thank you for taking the time to visit. I present to you my labour
               of love- a hobby which brings out my creative best and
@@ -49,7 +49,7 @@ const AboutMe = ({ onCollectionJump, onFeedbackJump }) => {
               </a>
               .
             </p>
-            <p>Enjoy, Muba</p>
+            <p className={classes.specialText}>Enjoy, Muba</p>
           </div>
           <div className={classes.media}>
             <Img
@@ -71,15 +71,20 @@ const AboutMe = ({ onCollectionJump, onFeedbackJump }) => {
               knitting in middle school, but never really put that to practical
               use except for the occasional repair of rips and tears in
               clothing, fixing fallen buttons or re do the trouser hems.
+            </p>
+            <p>
               Subsequently, for the better part of my life, my tryst with the
               needle and thread had more to do with placing surgical sutures on
               human tissues in the setting of the OR and I took great efforts to
               ensure my patients had the least conspicuous surgical scar that
-              blended with the surrounding skin tone and texture. 12 years ago,
-              whilst preparing for the Canadian Medical Licensing Board exams,
-              cross stitch canvasses provided the much needed distraction from
-              the routine of reading medical text books and attempting mock
-              exams. That marked the start of my midlife passion of needle art.
+              blended with the surrounding skin tone and texture.
+            </p>
+            <p>
+              12 years ago, whilst preparing for the Canadian Medical Licensing
+              Board exams, cross stitch canvasses provided the much needed
+              distraction from the routine of reading medical text books and
+              attempting mock exams. That marked the start of my midlife passion
+              of needle art.
             </p>
             <p>
               My first few canvases were traditional cross stitch using DMC/
@@ -87,10 +92,10 @@ const AboutMe = ({ onCollectionJump, onFeedbackJump }) => {
               getting the tension right for an even finish as I played with
               extensive palette of colours. As my confidence grew, I continued
               experimenting with different stitches, threads and finally moving
-              on to using beads and ribbons to add texture to the final
-              product. For most of my creative works, I have used the floral
-              theme as it provided endless possibilities to work with form,
-              colours and textures.
+              on to using beads and ribbons to add texture to the final product.
+              For most of my creative works, I have used the floral theme as it
+              provided endless possibilities to work with form, colours and
+              textures.
             </p>
             <p>
               What started as a distraction has now became a passion. From
@@ -177,6 +182,10 @@ const useStyles = createUseStyles({
       marginTop: "20px",
       width: "100%",
     },
+  },
+  specialText: {
+    fontFamily: "Nothing You Could Do",
+    fontSize: "20px",
   },
 })
 
